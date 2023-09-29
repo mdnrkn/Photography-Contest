@@ -68,7 +68,7 @@ body {
   border-style: ridge;
 }
 
-img {
+.img-container img {
   width: fit-content;
   height: fit-content;
   filter: grayscale(100%);
@@ -286,6 +286,16 @@ img:hover {
   justify-content: center;
   cursor: pointer;
 }
+.registration a:link,
+.registration a:visited {
+  text-decoration: none;
+  color: #808080;
+}
+
+.registration a:hover {
+  color: #ff3d3d;
+}
+
 .registration span {
   font-size: 18px;
   border: 4px;
@@ -371,4 +381,51 @@ footer span svg {
 }
 footer span svg:hover {
   fill: #ff3d3d;
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .img-container {
+    padding-right: 6px;
+  }
+  .img-container img {
+    width: 95%;
+  }
+  .judge-panel ul li img {
+    width: 60px;
+    height: 60px;
+  }
+  .judge-txt {
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+
+  .last-year-finalists {
+    height: 180px;
+  }
+
+  .last-year-finalists img {
+    width: 110px;
+  }
+
+  .last-year-finalists ul li span {
+    display: flex;
+    position: relative;
+    top: -24px;
+    justify-content: center;
+  }
+
+  .last-year-finalists-txt span {
+    font-size: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .reward-txt {
+    font-size: 20px;
+  }
 }
